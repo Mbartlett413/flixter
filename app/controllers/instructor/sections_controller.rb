@@ -7,8 +7,8 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def create 
-    @section = @course.sections.create(section_params)
-    redirect_to instructor_course_path(@course)
+    @section = current_course.sections.create(section_params)
+    redirect_to instructor_course_path(current_course)
   end
 
   private 
@@ -19,7 +19,7 @@ class Instructor::SectionsController < ApplicationController
     end
   end
 
-  helper_methos :current_course
+  helper_method :current_course
   def current_course 
     @current_course ||= Course.find(params[:course_id])
   end 
