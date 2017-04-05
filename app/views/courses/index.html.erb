@@ -3,10 +3,11 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"> Learn something today</h1>
   <hr />
-
+  
   <% @courses.each do |course| %>
     <h2 class="text-center"> 
         <%= link_to course.title, course_path(course) %> 
+        <%= image_tag course.image, class: 'img-fluid'%>
     </h2>
     <br />
     <div class="row">
@@ -16,6 +17,7 @@
       <div class="col-sm-4 col-12 text-center">
         <%= link_to 'Learn More...', course_path(course), class: 'btn btn-primary btn-large' %>
       </div>
+      
       </div>
       <br class="clr" />
   <% end %>
