@@ -50,6 +50,8 @@ gem "figaro"
 gem "fog"
 #minimagick
 gem "mini_magick"
+# carrierwave for video
+gem 'carrierwave-aws'
 
 
 

@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="http://vjs.zencdn.net/5.12.6/video-js.css" rel="stylesheet">
   </head>
 
   <body>
@@ -24,9 +25,7 @@
       <li class="nav-item">
       <%= link_to 'See All Courses', courses_path, class: 'btn btn-success' %>
         </li>
-     
     </ul>
-
     <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item ">
@@ -41,16 +40,15 @@
         </li>
       <% end %>
     </ul>
-    
   </div>
 </nav>
+
   <% if notice.present? %>
      <p class="alert alert-info"><%= notice %></p>
   <% end %>
   <% if notice.present? %>
      <p class="alert alert-danger"><%= alert %></p>
      <% end %>
-
 
     <%= yield %>
        </div>
@@ -62,5 +60,8 @@
         <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
+
+    <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>
 </html>
