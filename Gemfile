@@ -48,6 +48,8 @@ gem 'carrierwave', '~> 1.0'
 gem "figaro"
 # fog
 gem "fog"
+#minimagick
+gem "mini_magick"
 
 
 
