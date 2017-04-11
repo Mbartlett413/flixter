@@ -52,6 +52,9 @@ gem "fog"
 gem "mini_magick"
 # carrierwave for video
 gem 'carrierwave-aws'
+# stripe
+gem 'stripe'
+
 
 
 
