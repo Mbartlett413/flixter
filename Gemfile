@@ -54,6 +54,8 @@ gem "mini_magick"
 gem 'carrierwave-aws'
 # stripe
 gem 'stripe'
+# ranked-model
+gem 'ranked-model'
 
 
 
