@@ -1,3 +1,19 @@
+<script type="text/javascript">  $(function() {
+    $('.dahsection').sortable({
+      update: function( event, ui ) {
+        $.ajax({
+          type: 'PATCH',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: { section: { row_order_position: ui.item.index() } }
+        });
+      }
+    });
+  });
+</script>
+
+
+
 <br />
 
 <div class="booyah-box col-10 offset-1">
@@ -49,13 +65,14 @@
     </div>
   </div>
 
-  <div class="col-12">
-    <% @course.sections.each do |section| %>
+  <div class="col-12" class="dahsection">
+    <% @course.sections.order(:row_order).each do |section| %>
+
     <br /><br />
       <div class="section">
         <h3><%= section.title %></h3>
         <div class="row">
-          <% section.lessons.rank(:row_order).each do |lesson| %>
+          <% section.lessons.order(:row_order).each do |lesson| %>
             <div class="col-12 col-sm-6">
               <div class="lesson text-center">
               <br />

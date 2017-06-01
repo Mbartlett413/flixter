@@ -1,8 +1,20 @@
   @import "bootstrap";
+  @import "font-awesome";
 
   h1, h2, h3, h4, h5, h6, .navbar {
     margin: 0;
   }
+
+  ul{
+    list-style-type: none;
+  }
+      ul .header {
+        font-size: 25px;
+      }
+
+      ul .header .fa{
+        font-size: 20px;
+      }
 
   body{
     background: image_url('circles.png');
@@ -10,26 +22,50 @@
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   }
 
+  .section-li {
+    border: 1px solid;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    padding: 20px;
+    margin: 20px;
+  }
+
   .lesson{
     background-color: black; 
     margin-top: 10px;
     height: 130px;
   }
-    .lesson a {
-      color: white;
-      font-family: "Helvetica Neue", Helvetica;
-      font-weight: 100;
-      font-size: 15px;
-    }
-    .lesson a b{
-      font-weight: 100;
-      font-size: 25px;
-    }
-    .section{
-      border: 1px solid;
-      border-color: #e4e4e4 #bebebd #bebebd #e4e4e4 ;
-      padding: 20px;
-    }
+        .lessons li {
+          background: black;  
+          color: white;
+          margin: 10px;
+          font-family: "Helvetica Neue", Helvetica;
+          font-weight: 100;
+          padding: 8px;
+          font-size: 15px;
+        }
+        .lessons li b {
+          font-size: 25px;
+          font-weight: 100;
+        }
+        .lessons li p {
+          margin: 0;
+        }
+
+        .lesson a {
+          color: white;
+          font-family: "Helvetica Neue", Helvetica;
+          font-weight: 100;
+          font-size: 15px;
+        }
+        .lesson a b{
+          font-weight: 100;
+          font-size: 25px;
+        }
+        .section{
+          border: 1px solid;
+          border-color: #e4e4e4 #bebebd #bebebd #e4e4e4 ;
+          padding: 20px;
+        }
 
   .hero {
     color: white;
@@ -54,16 +90,16 @@
   .frosty {
     background: rgba(0, 0, 0, 0.5);
   }
-    .frosty h1{
-        font-family: "Helvetica Neue", Helvetica;
-        font-weight: 100;
-        text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-        }
-    .frosty h1{
-        font-family: "Helvetica Neue", Helvetica;
-        font-weight: 200;
-        text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-        }
+          .frosty h1{
+              font-family: "Helvetica Neue", Helvetica;
+              font-weight: 100;
+              text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+              }
+          .frosty h1{
+              font-family: "Helvetica Neue", Helvetica;
+              font-weight: 200;
+              text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+              }
 
 
   .navbar {
